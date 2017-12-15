@@ -1,0 +1,19 @@
+sudo: false
+language: go
+git:
+  depth: 1
+install: go get -v github.com/spf13/hugo
+script:
+  - hugo
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+  local_dir: public
+  repo: lxzxl/lxzxl.github.io
+  target_branch: master
+notifications:
+  email:
+    on_success: never
