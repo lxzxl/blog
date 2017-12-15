@@ -3,10 +3,14 @@ title: "重置Django migration的常见方式"
 date: 2017-12-13T19:05:35+08:00
 lastmod: 2017-08-28T21:41:52+08:00
 weight: 50
-draft: true
+keywords: ["django", "migration", "python"]
+description: "重置Django migration的常见方式"
+tags: ["django", "python"]
+categories: ["Django"]
+author: "lxzxl"
 ---
 
-根据django官方文档建议，开发过程中会把生成的migrations提交到git中。由于各种原因，会有一些场景需要重置migrations，故总结一些常用场景及解决办法。
+根据 django 官方文档建议，开发过程中会把生成的 migrations 提交到 git 中。由于各种原因，会有一些场景需要重置 migrations，故总结一些常用场景及解决办法。
 
 ## 场景一
 
@@ -14,7 +18,7 @@ draft: true
 
 步骤：
 
-1. 删除所有migrations
+1. 删除所有 migrations
 
    ```shell
    find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
@@ -23,29 +27,26 @@ draft: true
 
 2. 删除数据库
 
-3. 重新生成migrations
+3. 重新生成 migrations
 
    ```shell
    python manage.py makemigrations
    python manage.py migrate
    ```
 
-
-
 ## 场景二
 
-> 有时候我们会直接导入完整的数据库，包括数据，这种情况下就不能简单的清空数据库。
-> 这时我们的目的就是：清空数据库的migration history，保证以后的migrate能正常使用，但要保留其他数据。
+> 有时候我们会直接导入完整的数据库，包括数据，这种情况下就不能简单的清空数据库。这时我们的目的就是：清空数据库的 migration history，保证以后的 migrate 能正常使用，但要保留其他数据。
 
 步骤：
 
-1. 从数据库中删除所有非`0001_initial`的migration history
+1. 从数据库中删除所有非`0001_initial`的 migration history
 
    ```mysql
    DELETE FROM django_migrations WHERE app IN ('your','app','labels') AND name != '0001_initial'
    ```
 
-2. 使用migrate命令回滚`0001_initial`的migration history
+2. 使用 migrate 命令回滚`0001_initial`的 migration history
 
    ```shell
    python manage.py migrate --fake your zero
