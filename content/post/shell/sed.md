@@ -1,7 +1,6 @@
 ---
 title: "sed笔记"
 date: 2017-12-14T11:18:15+08:00
-draft: true
 weight: 70
 keywords: ["shell", "linux", "sed"]
 description: "sed命令学习笔记"
