@@ -14,6 +14,8 @@ deploy:
   local_dir: public
   repo: lxzxl/lxzxl.github.io
   target_branch: master
+  email: lxz318@aliyun.com
+  name: lxzxl
 notifications:
   email:
     on_success: never
