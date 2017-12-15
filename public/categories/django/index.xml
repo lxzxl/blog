@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on Blog of lxzxl</title>
+    <link>http://lxzxl.github.io/categories/django/</link>
+    <description>Recent content in Django on Blog of lxzxl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 13 Dec 2017 19:05:35 +0800</lastBuildDate>
+    
+	<atom:link href="http://lxzxl.github.io/categories/django/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>重置Django migration的常见方式</title>
+      <link>http://lxzxl.github.io/post/python/reset-django-migration/</link>
+      <pubDate>Wed, 13 Dec 2017 19:05:35 +0800</pubDate>
+      
+      <guid>http://lxzxl.github.io/post/python/reset-django-migration/</guid>
+      <description>根据 django 官方文档建议，开发过程中会把生成的 migrations 提交到 git 中。由于各种原因，会有一些场景需要重置 migrations，故总结一些常用场景及解决办法。</description>
+    </item>
+    
+  </channel>
+</rss>
