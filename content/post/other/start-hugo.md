@@ -171,27 +171,27 @@ hugo server -D
 
 6. 在 blog repo 中添加 .travis.yml
 
-    ```yaml
-    sudo: false
-    language: go
-    git:
-      depth: 1
-    install: go get -v github.com/spf13/hugo
-    script:
-      \- hugo # temp fix conflict of markdown and yaml list syntax.
-    deploy:
-      provider: pages
-      skip_cleanup: true
-      github_token: $GITHUB_TOKEN
-      on:
-        branch: master
-      local_dir: public
-      repo: <username>/<username>.github.io
-      fqdn: <custom-domain-if-needed>
-      target_branch: master
-      email: <github-email>
-      name: <github-username>
-    ```
+        ```yaml
+        sudo: false
+        language: go
+        git:
+        depth: 1
+        install: go get -v github.com/spf13/hugo
+        script:
+        - hugo
+        deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        on:
+            branch: master
+        local_dir: public
+        repo: <username>/<username>.github.io
+        fqdn: <custom-domain-if-needed>
+        target_branch: master
+        email: <github-email>
+        name: <github-username>
+        ```
     
     部分参数解释：
 
