@@ -1,10 +1,10 @@
 ---
-title: "Start Hugo"
+title: "使用Hugo搭建博客"
 date: 2017-12-17T00:07:53+08:00
 lastmod: 2017-12-17T00:38:53+08:00
 weight: 20
 keywords: ["hugo", "pages", "github"]
-description: "使用Higo从零开始搭建Github Pages Blog"
+description: "使用Hugo从零开始搭建Github Pages Blog"
 tags: ["hugo", "python"]
 categories: ["Other"]
 author: "lxzxl"
