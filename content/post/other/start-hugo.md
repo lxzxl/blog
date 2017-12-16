@@ -1,7 +1,13 @@
 ---
 title: "Start Hugo"
 date: 2017-12-17T00:07:53+08:00
-draft: true
+lastmod: 2017-12-17T00:38:53+08:00
+weight: 20
+keywords: ["hugo", "pages", "github"]
+description: "使用Higo从零开始搭建Github Pages Blog"
+tags: ["hugo", "python"]
+categories: ["Other"]
+author: "lxzxl"
 ---
 
 以前写的一些文章笔记都托管在简书和 segmenfault 上，但由于简书内容越来越垃圾，一直都打算转移到 github pages 上，但由于个人原因拖到现在。最近刚好有些时间，比较了一些静态博客生成工具，最后选择用 Hugo 来生成和管理自己的博客。
