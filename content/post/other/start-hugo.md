@@ -73,6 +73,8 @@ tree blog
 
 下面以我比较喜欢[Even 主题](https://themes.gohugo.io/hugo-theme-even/)举个例子
 
+下面以我比较喜欢[Even 主题](https://themes.gohugo.io/hugo-theme-even/)举个例子
+
 1. 下载
 
    * 可以直接`clone`到`themes`目录下，优点是如果对主题有调整需求可以同时提交到 git 控制中。
@@ -89,9 +91,9 @@ tree blog
 
 2. 使用
 
-> 如果需要调整更改主题，需要在 themes/even 目录下重新 build
->
-> `cd themes/even && npm i && npm start`
+   如果需要调整更改主题，需要在 themes/even 目录下重新 build
+
+   `cd themes/even && npm i && npm start`
 
 ### 第一篇文章
 
@@ -126,7 +128,7 @@ hugo server -D
 #Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 ```
 
-![Hugo Server](../../../static/images/start-hugo/server.png)
+![Hugo Server](/images/start-hugo/server.png)
 
 > Hugo server 会检测文件变化，自动刷新浏览器。
 
@@ -134,7 +136,7 @@ hugo server -D
 
 最终我们需要把博客部署到一个托管服务，免费稳定的 Github Pages 是个很好的选择。再结合 Travis 自动部署，发布文章会变得很简单。
 
-1. 先把源码提交到 GitHub 的一个 repo (源码 repo)。
+1. 先把源码提交到 GitHub 的一个 repo (源码 repo)
 
    ```bash
    git add -A
@@ -143,23 +145,23 @@ hugo server -D
    git push -u origin master
    ```
 
-2. 准备发布博客使用的 pages repo。
+2. 准备发布博客使用的 pages repo
 
    Github Pages 有多种类型：个人、组织、个人的某个项目、组织的某个项目。具体细节官方文档可见[GitHub Pages](https://help.github.com/articles/user-organization-and-project-pages/)。我使用的是`<username>.github.io`
 
 3. 首先在 Github 上创建`<username>.github.io`repo，同时 config.toml 的`baseURL`要设置成`https://<username>.github.io`
 
-4. 生成[Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。![Access Token](../../../static/images/start-hugo/access-token.png)
+4. 生成[Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。![Access Token](/images/start-hugo/access-token.png)
 
 5. 配置 Travis
 
    去[Travis CI](https://travis-ci.org/)注册关联 Github 的账号，然后同步账户并激活 blog repo。
 
-   ![Travis Account](../../../static/images/start-hugo/travis-account.png)
+   ![Travis Account](/images/start-hugo/travis-account.png)
 
    接着进入 blog 的设置页面，选择自动部署触发条件，并把刚刚生成的 GitHub Access Token 添加到环境变量里。
 
-   ![Travis Settings](../../../static/images/start-hugo/travis-settings.png)
+   ![Travis Settings](/images/start-hugo/travis-settings.png)
 
 6. 在 blog repo 中添加 .travis.yml
 
