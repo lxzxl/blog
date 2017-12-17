@@ -1,7 +1,6 @@
 ---
 title: "awk笔记"
-date: 2017-12-14T11:18:15+08:00
-weight: 70
+date: 2015-12-14T11:18:15+08:00
 keywords: ["shell", "linux", "awk"]
 description: "awk命令学习笔记"
 tags: ["shell", "linux"]

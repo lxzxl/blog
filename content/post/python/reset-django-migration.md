@@ -1,8 +1,7 @@
 ---
 title: "重置Django migration的常见方式"
-date: 2017-12-13T19:05:35+08:00
-lastmod: 2017-12-13T19:05:35+08:00
-weight: 50
+date: 2017-10-17T19:05:35+08:00
+lastmod: 2017-10-17T19:05:35+08:00
 keywords: ["django", "migration", "python"]
 description: "重置Django migration的常见方式"
 tags: ["django", "python"]
