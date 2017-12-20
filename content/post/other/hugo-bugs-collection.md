@@ -2,7 +2,8 @@
 title: "使用Hugo遇到的坑"
 date: 2017-12-17T00:07:53+08:00
 lastmod: 2017-12-17T00:38:53+08:00
-weight: 20
+draft: false
+weight: 10
 keywords: ["hugo", "bugs"]
 description: "使用Hugo遇到的坑搜集"
 tags: ["hugo"]
@@ -10,16 +11,19 @@ categories: ["Other"]
 author: "lxzxl"
 ---
 
-上一篇介绍了 Hugo 入门，但实际使用中还是遇到不少坑，搜集在这边文章里帮助其他童鞋少走弯路。
+[上一篇](/post/other/start-hugo/)介绍了 Hugo 入门，但实际使用中还是遇到不少坑，统一搜集在这边文章里帮助其他童鞋少掉头发。
+
+<!--more-->
 
 # Hugo server 无法正确监测到文件变化
 
 本来用家里的电脑写文章时还是正常的，每次改动都能自动检测到，会触发重新编译。但之后用公司电脑就不行了，会出现下面图中的错误：
-`hugo server`竟然会监听到`.git`中的变化。即便我删掉我的 blog 目录重新 clone 下来，还是会有一样的问题。
 
 ![Hugo Server Error](/images/hugo-bugs-collection/hugo-server-watch.jpg)
 
-去 Hugo 的 Github Issues 里能找到一样的问题[#3468](https://github.com/gohugoio/hugo/issues/3468)，但查看提交版本发现我的版本已经包含修复。
+`hugo server`竟然会监听到`.git`中的变化。即便我删掉我的 blog 目录重新 clone 下来，还是会有一样的问题。
+
+去 Hugo 的 Github Issues 里能找到一样的问题[#3468](https://github.com/gohugoio/hugo/issues/3468)，但查看提交版本发现我的版本其实已经包含修复。
 
 ```bash
 $ hugo version

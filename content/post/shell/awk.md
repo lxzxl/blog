@@ -8,6 +8,10 @@ categories: ["shell"]
 author: "lxzxl"
 ---
 
+记录awk的一些常用命令及用法
+
+<!--more-->
+
 ## 命令格式:
 
 `awk [-F fild-separator] 'commands' input-file(s)`

@@ -11,6 +11,8 @@ author: "lxzxl"
 
 开始有兴趣了解 Service Worker，是因为学习 react 时使用`create-react-app`创建的应用，src 下面会有一个`registerServiceWorker.js`文件。后来在了解 PWA 时也看到了它的身影。于是就打算写一篇笔记详细了解一下。
 
+<!--more-->
+
 # 什么是 Service Worker
 
 > Service workers essentially act as proxy servers that sit between web applications, and the browser and network (when available). They are intended to (amongst other things) enable the creation of effective offline experiences, intercepting network requests and taking appropriate action based on whether the network is available and updated assets reside on the server. They will also allow access to push notifications and background sync APIs.

@@ -13,6 +13,8 @@ author: "lxzxl"
 
 ![clipboard.png](/images/react/setstate-warning.png)
 
+<!--more-->
+
 > Warning: This synthetic event is reused for performance reasons. If you're seeing this, you're accessing the property `target` on a released/nullified synthetic event. This is set to null. If you must keep the original synthetic event around, use event.persist(). See https://fb.me/react-event-pooling for more information.
 
 查看文档解释：

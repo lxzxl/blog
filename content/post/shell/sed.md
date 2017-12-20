@@ -8,8 +8,12 @@ categories: ["shell"]
 author: "lxzxl"
 ---
 
-`sed [选项] [sed命令] 输入文件`
-`sed [选项] [-f sed脚本文件] 输入文件`
+```bash
+sed [选项] [sed命令] 输入文件
+sed [选项] [-f sed脚本文件] 输入文件
+```
+
+<!--more-->
 
 ## sed 选项：
 

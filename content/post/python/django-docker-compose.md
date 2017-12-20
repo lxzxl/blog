@@ -9,9 +9,9 @@ categories: ["Django", "Docker"]
 author: "lxzxl"
 ---
 
-# 前言
+本文主要内容关于使用 `docker-compose` 实践部署后端 `django-rest-framework` 和前端 `vue.js` 应用。记录其中遇到的一些坑以及解决办法。
 
-本文主要内容关于使用 docker-compose 实践部署后端 django-rest-framework 和前端 vue.js 应用。记录其中遇到的一些坑以及解决办法。
+<!--more-->
 
 # 准备 Docker-compose 环境
 
