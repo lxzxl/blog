@@ -171,15 +171,15 @@ hugo server -D
 
 6. 在 blog repo 中添加 .travis.yml
 
-        ```yaml
-        sudo: false
-        language: go
-        git:
+    ```yaml
+    sudo: false
+    language: go
+    git:
         depth: 1
-        install: go get -v github.com/spf13/hugo
-        script:
+    install: go get -v github.com/gohugoio/hugo
+    script:
         - hugo
-        deploy:
+    deploy:
         provider: pages
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
@@ -191,7 +191,7 @@ hugo server -D
         target_branch: master
         email: <github-email>
         name: <github-username>
-        ```
+    ```
     
     部分参数解释：
 
@@ -200,4 +200,3 @@ hugo server -D
     > * fqdn: 如果需要设置自定义域名，可以在这里设置，travis 会自动生成 CNAME 文件提交，同时要设置 config.toml 中的相应的`baseURL`
 
 7. 最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
-```
