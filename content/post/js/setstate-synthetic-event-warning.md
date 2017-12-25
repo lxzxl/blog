@@ -1,11 +1,11 @@
 ---
 title: "setState的一个Synthetic Event Warning"
 date: 2017-12-17T23:01:47+08:00
-lastmod: 2017-11-06T22:09:00+08:00
+lastmod: 2017-12-25T16:00:00+08:00
 keywords: ["setState", "Synthetic Event Warning", "react"]
 description: "setState的一个Synthetic Event Warning"
 tags: ["react"]
-categories: ["javascript"]
+categories: ["javascript", "react"]
 author: "lxzxl"
 ---
 
