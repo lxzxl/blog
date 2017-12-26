@@ -13,7 +13,7 @@ deploy:
     branch: master
   local_dir: public
   repo: lxzxl/lxzxl.github.io
-  fqdn: blog.bulma.xyz
+  fqdn: www.bulma.xyz
   target_branch: master
   email: lxz318@aliyun.com
   name: lxzxl
