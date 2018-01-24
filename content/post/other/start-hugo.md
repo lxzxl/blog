@@ -1,10 +1,10 @@
 ---
-title: "使用Hugo搭建博客"
+title: "使用 Hugo 搭建博客"
 date: 2017-12-17T00:07:53+08:00
 lastmod: 2017-12-17T00:38:53+08:00
 weight: 20
 keywords: ["hugo", "pages", "github"]
-description: "使用Hugo从零开始搭建Github Pages Blog"
+description: "使用 Hugo 从零开始搭建 Github Pages Blog"
 tags: ["hugo"]
 categories: ["Other"]
 author: "lxzxl"
@@ -16,7 +16,7 @@ author: "lxzxl"
 
 # Hugo
 
-[Hugo](https://gohugo.io/)是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
+[Hugo](https://gohugo.io/) 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。
 
 ---
 
@@ -69,21 +69,21 @@ tree blog
 
 `config.toml` 是配置文件，在里面可以定义博客地址、构建配置、标题、导航栏等等。
 
-`themes` 是主题目录，可以去[themes.gohugo.io](http://themes.gohugo.io/)下载喜欢的主题。
+`themes` 是主题目录，可以去 [themes.gohugo.io](http://themes.gohugo.io/) 下载喜欢的主题。
 
 `content` 是博客文章的目录。
 
 ### 安装主题
 
-去[themes.gohugo.io](http://themes.gohugo.io/)选择喜欢的主题，下载到 themes 目录中，然后在 config.toml 中配置`theme = "even"`即可。其他配置可见 theme 说明
+去 [themes.gohugo.io](http://themes.gohugo.io/) 选择喜欢的主题，下载到 themes 目录中，然后在 config.toml 中配置 `theme = "even"` 即可。其他配置可见 theme 说明
 
-下面以我比较喜欢[Even 主题](https://themes.gohugo.io/hugo-theme-even/)举个例子
+下面以我比较喜欢 [Even 主题](https://themes.gohugo.io/hugo-theme-even/) 举个例子
 
-下面以我比较喜欢[Even 主题](https://themes.gohugo.io/hugo-theme-even/)举个例子
+下面以我比较喜欢 [Even 主题](https://themes.gohugo.io/hugo-theme-even/) 举个例子
 
 #### 1. 下载
 
-* 可以直接`clone`到`themes`目录下，优点是如果对主题有调整需求可以同时提交到 git 控制中。
+* 可以直接 `clone` 到 `themes` 目录下，优点是如果对主题有调整需求可以同时提交到 git 控制中。
 
     ```bash
     git clone https://github.com/olOwOlo/hugo-theme-even themes/even
@@ -126,7 +126,7 @@ author: ""
 
 ### 预览
 
-执行命令，使用 Hugo 生成静态内容并在启动本地 HTTP Server。然后即可访问http://localhost:1313/ 查看效果。
+执行命令，使用 Hugo 生成静态内容并在启动本地 HTTP Server。然后即可访问 http://localhost:1313/ 查看效果。
 
 ```bash
 hugo server -D
@@ -155,15 +155,15 @@ hugo server -D
 
 2. 准备发布博客使用的 pages repo
 
-    Github Pages 有多种类型：个人、组织、个人的某个项目、组织的某个项目。具体细节官方文档可见[GitHub Pages](https://help.github.com/articles/user-organization-and-project-pages/)。本文使用的是`<username>.github.io`。
+    Github Pages 有多种类型：个人、组织、个人的某个项目、组织的某个项目。具体细节官方文档可见 [GitHub Pages](https://help.github.com/articles/user-organization-and-project-pages/)。本文使用的是 `<username>.github.io`。
 
-3. 首先在 Github 上创建`<username>.github.io`repo，同时 config.toml 的`baseURL`要设置成`https://<username>.github.io`
+3. 首先在 Github 上创建 `<username>.github.io`repo，同时 config.toml 的 `baseURL` 要设置成 `https://<username>.github.io`
 
-4. 生成[Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。![Access Token](/images/start-hugo/access-token.png)
+4. 生成 [Github Access Token](https://github.com/settings/tokens/new)，至少要有 public_repo 的权限。![Access Token](/images/start-hugo/access-token.png)
 
 5. 配置 Travis
 
-    去[Travis CI](https://travis-ci.org/)注册关联 Github 的账号，然后同步账户并激活 blog repo。
+    去 [Travis CI](https://travis-ci.org/) 注册关联 Github 的账号，然后同步账户并激活 blog repo。
 
     ![Travis Account](/images/start-hugo/travis-account.png)
 
@@ -194,11 +194,11 @@ hugo server -D
         email: <github-email>
         name: <github-username>
     ```
-    
+
     部分参数解释：
 
     > * 默认情况下，travis 会自动下载 git submodules
     > * github_token: $GITHUB_TOKEN 要和 travis 设置的环境变量名一致
-    > * fqdn: 如果需要设置自定义域名，可以在这里设置，travis 会自动生成 CNAME 文件提交，同时要设置 config.toml 中的相应的`baseURL`
+    > * fqdn: 如果需要设置自定义域名，可以在这里设置，travis 会自动生成 CNAME 文件提交，同时要设置 config.toml 中的相应的 `baseURL`
 
 7. 最后，可以手动去 travis 触发一次 build 检查效果。如果设置了提交触发 build，之后每次 blog repo 有提交都会自动 build，不再需要关心 travis 状态。
