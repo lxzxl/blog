@@ -79,8 +79,6 @@ tree blog
 
 下面以我比较喜欢 [Even 主题](https://themes.gohugo.io/hugo-theme-even/) 举个例子
 
-下面以我比较喜欢 [Even 主题](https://themes.gohugo.io/hugo-theme-even/) 举个例子
-
 #### 1. 下载
 
 * 可以直接 `clone` 到 `themes` 目录下，优点是如果对主题有调整需求可以同时提交到 git 控制中。
