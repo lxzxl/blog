@@ -3,7 +3,7 @@ title: "为什么我们应该使用 pnpm（译）"
 date: 2018-02-08T15:30:00+08:00
 lastmod: 2018-02-08T15:30:00+08:00
 keywords: ["pnpm", "pnpm", "node.js"]
-description: "pnpm是又一个Node.js的包管理工具。它可以替换npm，而且npm更快更高效。"
+description: "pnpm 是又一个 Node.js 的包管理工具。它可以替换 npm，而且 npm 更快更高效。"
 tags: ["npm"]
 categories: ["npm"]
 author: "lxzxl"
@@ -13,7 +13,7 @@ author: "lxzxl"
 
 <!--more-->
 
-能有多快? _3 倍！_ [这里](<(https://github.com/pnpm/node-package-manager-benchmark)>) 查看 benchmarks 。
+能有多快? _3 倍！_ 可以在[这里](https://github.com/pnpm/node-package-manager-benchmark)查看 benchmarks 。
 
 为什么更高效？ 当你安装一个软件包，我们把它保存在你的机器上的一个全局存储目录中，然后我们创建一个硬链接而不是复制。 对于模块的每个版本，只会有一个副本保存在磁盘上。 例如，当使用 npm 或 yarn 时，如果有 100 个使用 lodash 的项目，你的磁盘上就会有有 100 份 lodash 的拷贝。pnpm 能帮助您节省千兆字节的磁盘空间！
 
@@ -117,7 +117,7 @@ node_modules/.registry.npmjs.org/foo/1.0.0/node_modules
 
 只需通过 npm 安装 pnpm：npm install -g pnpm。 只要你想安装一些东西，就用它来代替 npm：pnpm i foo。
 
-您也可以在 [pnpm GitHub repo](https://github.com/pnpm/pnpm)或 [pnpm.js.org](https://pnpm.js.org/)中阅读更多信息。 您可以关注 [pnpm on Twitter](https://twitter.com/pnpmjs)，或者在[pnpm Gitter Chat Room](https://gitter.im/pnpm/pnpm) 寻求帮助。
+您也可以在 [pnpm GitHub repo](https://github.com/pnpm/pnpm) 或 [pnpm.js.org](https://pnpm.js.org/) 中阅读更多信息。 您可以关注 [pnpm on Twitter](https://twitter.com/pnpmjs)，或者在 [pnpm Gitter Chat Room](https://gitter.im/pnpm/pnpm) 寻求帮助。
 
 ---
 
