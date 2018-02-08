@@ -1,0 +1,29 @@
+Arguments: 
+  /Users/steven/n/bin/node /Users/steven/n/bin/yarn outdated
+
+PATH: 
+  /Users/steven/.pyenv/plugins/pyenv-virtualenvwrapper/shims:/Users/steven/.pyenv/libexec:/Users/steven/.pyenv/plugins/python-build/bin:/Users/steven/.pyenv/plugins/pyenv-virtualenvwrapper/bin:/Users/steven/.pyenv/plugins/pyenv-virtualenv/bin:/Users/steven/.pyenv/plugins/pyenv-update/bin:/Users/steven/.pyenv/plugins/pyenv-installer/bin:/Users/steven/.pyenv/plugins/pyenv-doctor/bin:/Users/steven/.pyenv/shims:/Users/steven/.pyenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/steven/n/bin
+
+Yarn version: 
+  1.4.0
+
+Node version: 
+  8.9.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: No lockfile in this directory. Run `yarn install` to generate one.
+      at new MessageError (/Users/steven/n/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /Users/steven/n/lib/node_modules/yarn/lib/cli.js:88864:13
+      at <anonymous>

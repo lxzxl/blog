@@ -2,7 +2,6 @@
 title: "使用 Hugo 搭建博客"
 date: 2017-12-17T00:07:53+08:00
 lastmod: 2017-12-17T00:38:53+08:00
-weight: 20
 keywords: ["hugo", "pages", "github"]
 description: "使用 Hugo 从零开始搭建 Github Pages Blog"
 tags: ["hugo"]

@@ -3,7 +3,6 @@ title: "使用Hugo遇到的坑"
 date: 2017-12-20T15:07:53+08:00
 lastmod: 2017-12-20T15:45:53+08:00
 draft: false
-weight: 10
 keywords: ["hugo", "bugs"]
 description: "使用Hugo遇到的坑搜集"
 tags: ["hugo"]
