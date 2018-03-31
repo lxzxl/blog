@@ -1,14 +1,14 @@
 ---
 title: "面试知识点总结 (1)"
 date: 2018-03-31T07:50:49+08:00
-keywords: ["interview", "javascript", "作用域", "作用域链", "闭包"]
+keywords: ["面试", "javascript", "作用域", "作用域链", "闭包"]
 description: "总结面试中常问的 JavaScript 知识点：关于作用域和闭包"
 tags: ["javascript"]
 categories: ["javascript"]
 author: "lxzxl"
 ---
 
-总结面试中常问的 JavaScript 知识点
+总结面试中常问的 JavaScript 知识点之 - 作用域和闭包
 
 # 执行上下文
 
