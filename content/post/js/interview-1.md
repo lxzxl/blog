@@ -20,7 +20,7 @@ console.log(a); // ReferenceError
 console.log(a); // undefined
 var a;
 
-console.log(a); // 10
+console.log(a); // undefined
 var a = 10;
 
 console.log(f1); // function f1(){}
