@@ -24,7 +24,7 @@ js类型可分为两类：值类型和引用类型
 
 每个函数function都有一个prototype, 即原型
 
-每个对象都有一个**\__proto__**, 指向创建该对象的函数(构造函数)的prototype
+每个对象都有一个`__proto__`, 指向创建该对象的函数(构造函数)的prototype
 
 构造函数原型的\__proto__指向Object.prototype
 
